@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--use w3 schools to help with new tags-->
 <html>
+
 <body style= "background-color:white;">
   <link rel="stylesheet" type="text/css" href="homepage.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,16 +16,19 @@
   body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 
+#move{
+  margin-top:80px;
+  margin-bottom:20px;
+}
   </style>
   <body>
 
   <!-- Navbar -->
 
-
   <div class="w3-top">
     <div class="w3-bar w3-red w3-card w3-left-align w3-large">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="homepage.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
       <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
 
       <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
@@ -32,17 +36,17 @@
           <button class="w3-button w3-black">Page</button>
           <div class="w3-dropdown-content w3-bar-block w3-border">
             <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
-            <a href="Driverpage.html" class="w3-bar-item w3-button">Driver</a>
+            <a href="driverspage.html" class="w3-bar-item w3-button">Driver</a>
             <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
 
           </div>
         </div>
-        <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="#" class="w3-bar-item w3-button">About Us</a>
       <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
 
-      </div>
     </div>
-<h1><center>
+  </div>
+<h1><center id="move">
 "There is no exercise better for the heart than reaching down and lifting people up."
 </h1></center>
 
@@ -66,7 +70,7 @@ function myFunction() {
 </center>
 
 <center>
-  <img src= homelesspic.jpg></img>
+  <img src= "homelesspic.jpg"></img>
 
 </script>
 <center>
@@ -162,9 +166,6 @@ window.onclick = function(event) {
       modal.style.display = "none";
   }
 }
-
 </script>
 </html>
 </body>
-
-<!-- CHANGE THE FORMAT TO MATCH THE RED PAGES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
