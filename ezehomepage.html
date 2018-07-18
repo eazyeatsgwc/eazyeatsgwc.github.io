@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Eazy-Eats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+</style>
+
+
+
+
+<body>
+
+<!-- Navbar -->
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="ezehomepage.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-black">Page</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+          <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+        </div>
+      </div>
+      <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+    </div>
+  </div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Eazy-Eats</h1>
+
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Our Mission</h1>
+      <p class="w3-text-grey">Eazy-Eats is a new tool to link restaurants and shelters with leftover food.
+        Say goodbye to wasting leftovers and share them with those in need.On average 1.3 billion tons of food is wasted every year.
+         With the amount of food being thrown out we as a community can help those who can not afford a meal everyday.
+         Eazy-Eats is dedicated to facilitating the movement of leftover food from restaurants and households with extra food using taxi services like Uber, Lyft, etc.
+       </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="shelter1.jpg" width="100%" height="40%">
+    </div>
+  </div>
+</div>
+
+<!-- Calendar -->
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+    </div>
+
+    <div class="w3-twothird">
+    <p>  <h1>Upcoming Events</h1> </p>
+
+    <iframe src="https://calendar.google.com/calendar/embed?src=eazyeatsgwc%40gmail.com&ctz=America%2FChicago" style="border: 0" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
+
+      <!-- Write in upcoming events -->
+      <h5 class="w3-padding-32"></h5>
+
+<!-- Write in upcoming events -->
+      <p class="w3-text-grey"></p>
+    </div>
+  </div>
+</div>
+
+<!--   Quotes Filter    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container w3-container w3-black w3-center w3-opacity w3-padding-64">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+    <p class="author">- John Keats</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+    <p class="author">- Ernest Hemingway</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.</q>
+    <p class="author">- Barack Obama</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>We can't help everyone, but everyone can help someone</q>
+    <p class="author">- Ronald Reagan</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.</q>
+    <p class="author">- Ralph Waldo Emerson</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!--   WORKING HERE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <!-- <div >
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div> -->
+ <div class="w3-large w3-padding-2">
+   <p>Girls Who Code
+   <br>Synchrony Financial Alpharetta</p>
+ </div>
+
+
+
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

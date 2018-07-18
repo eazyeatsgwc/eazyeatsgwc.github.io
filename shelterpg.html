@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--use w3 schools to help with new tags-->
+<html>
+<body style= "background-color:white;">
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Eazy-Eats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+  </style>
+  <body>
+
+  <!-- Navbar -->
+
+
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+      <div class="w3-dropdown-hover">
+          <button class="w3-button w3-black">Page</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+            <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+            <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+          </div>
+        </div>
+        <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+      </div>
+    </div>
+<h1><center>
+"There is no exercise better for the heart than reaching down and lifting people up."
+</h1></center>
+
+<center>
+<button onclick="myFunction()">Please enter Shelter name</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var txt;
+    var person = prompt("Please enter your shelter's name:", "");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Welcome back " + person + "! Ready to choose some new food items?";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+</script>
+</center>
+
+<center>
+  <img src= homelesspic.jpg></img>
+
+</script>
+<center>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Select a new food option!</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <span class="close">&times;</span>
+  <p><img src = avotoast.jpg width="250" height="200"></img><img src = pasta.jpg width="250" height="200"></img><img src= fish.jpg width="250" height="200"></img></p>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+
+</script>
+</html>
+</body>
+
+<!-- CHANGE THE FORMAT TO MATCH THE RED PAGES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<title>Restaurant Owner's Page</title>
+
+<p><h1 id = "title">Restaurant Owner's Page</h1>
+<center><h2>Welcome Back User!</h2>
+<br><img src = "owner-picture.jpg" height = "300px">
+</center>
+
+<script src="restaurant_javascript.js"> </script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+#title {
+  margin-top: 50px;
+}
+
+#newFood {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+
+</style>
+
+
+  </head>
+  <body>
+
+    <div class="w3-top">
+      <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">Page</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+              <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+              <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+            </div>
+          </div>
+          <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+        </div>
+      </div>
+
+<div id = "colorDiv">
+<a href = "restaurant_popup_actual.html"> <p><h3 id = "newFood">Contribute New Food Item</h3> </a>
+<div>
+
+<hr style = "border: 2px solid black;" />
+
+<div id = "newFood">
+<p><h3>Previous Food Items Donated:</h3>
+  <!-- <button type="button" name="refresh" onclick = "filterThroughForm()">Refresh</button> -->
+  <ul><h4>
+    <li>Fettucini Alfredo
+    <li>Caesar Salad
+    <li>Avocado Toast
+  </ul></h4>
+</div>
+
+<!-- <p id="answers"></p>
+
+<script>
+document.getElementById("answers").innerHTML = 5 + 6;
+</script> -->
+
+
+
+  </body>
+
+
+</html>

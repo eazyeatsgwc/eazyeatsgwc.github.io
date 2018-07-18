@@ -1,0 +1,194 @@
+<!DOCTYPE>
+<html><!DOCTYPE html>
+  <head>
+    <h1 id = "moveDownPlease">Nearby Shelters</h1>
+    <center>
+    <h3 id = "moveDownPlease"> Sorry, no shelters nearby are registered at the moment. Contact your
+      closest shelter and tell them to join Eazy-Eats and make food accessible to all.</h3>
+    </center>
+
+      <link rel="stylesheet" type="text/css" href="homepage.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- <div id="map" style="width:400px;height:400px"> -->
+    <style>
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+      /* Set the size of the div element that contains the map */
+      #moveDownPlease {
+        margin-top: 50px;
+      }
+
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 75%;  /* The width is the width of the web page */
+        margin-top: 25px;
+       }
+
+       .firstname { padding:5px;
+         width: 1400px;
+         font-size:16px; border-color:#cccccc; border-width:1px; border-radius:7px; border-style:double; font-family:Merriweather; text-shadow:0px 0px 0px rgba(42,42,42,.75); box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.1); color:#a8a8a8; text-align:left;  }
+           .firstname:focus { outline:none; }
+       .email { padding:5px;
+         width: 1400px;
+         font-size:16px; border-color:#cccccc; border-width:1px; border-radius:7px; border-style:double; font-family:Merriweather; text-shadow:0px 0px 0px rgba(42,42,42,.75); box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.1); color:#a8a8a8; text-align:left;  }
+           .email:focus { outline:none; }
+       .subject{ padding:5px;
+         width: 1400px;
+         font-size:16px; border-color:#cccccc; border-width:1px; border-radius:7px; border-style:double; font-family:Merriweather; text-shadow:0px 0px 0px rgba(42,42,42,.75); box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.1); color:#a8a8a8; text-align:left;  }
+           .subject:focus { outline:none; }
+       #message { padding:45px;
+         width: 1409px;
+         font-size:16px; border-color:#cccccc; border-width:1px; border-radius:7px; border-style:double; font-family:Merriweather; text-shadow:0px 0px 0px rgba(42,42,42,.75); box-shadow:inset 0px 0px 5px 0px rgba(42,42,42,.1); color:#a8a8a8; text-align:left;  }
+           .message:focus { outline:none; }
+       .myButton {
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e73c3c), color-stop(1, #e4685d));
+        background:-moz-linear-gradient(top, #e73c3c 5%, #e4685d 100%);
+        background:-webkit-linear-gradient(top, #e73c3c 5%, #e4685d 100%);
+        background:-o-linear-gradient(top, #e73c3c 5%, #e4685d 100%);
+        background:-ms-linear-gradient(top, #e73c3c 5%, #e4685d 100%);
+        background:linear-gradient(to bottom, #e73c3c 5%, #e4685d 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e73c3c', endColorstr='#e4685d',GradientType=0);
+        background-color:#e73c3c;
+        -moz-border-radius:8px;
+        -webkit-border-radius:8px;
+        border-radius:8px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Merriweather;
+        font-size:17px;
+        padding:12px 600px;
+        text-decoration:none;
+       }
+       .myButton:hover {
+        background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e4685d), color-stop(1, #e73c3c));
+        background:-moz-linear-gradient(top, #e4685d 5%, #e73c3c 100%);
+        background:-webkit-linear-gradient(top, #e4685d 5%, #e73c3c 100%);
+        background:-o-linear-gradient(top, #e4685d 5%, #e73c3c 100%);
+        background:-ms-linear-gradient(top, #e4685d 5%, #e73c3c 100%);
+        background:linear-gradient(to bottom, #e4685d 5%, #e73c3c 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4685d', endColorstr='#e73c3c',GradientType=0);
+        background-color:#e4685d;
+       }
+       .myButton:active {
+        position:relative;
+        top:1px;
+         input[type=submit]:hover {
+             background-color: #45a049;
+         }
+
+         .container {
+             border-radius: 5px;
+             background-color: #f2f2f2;
+             padding: 20px;
+             bottom: 20%;
+       }
+       .half {
+         width: 48%;
+         margin-bottom: 1em;
+         float: left;
+       }
+
+       #moveDown {
+         margin-top: 100px;
+       }
+
+       /* .right { width: 50%; }
+
+       .left {
+            margin-right: 2%;
+       } */
+    </style>
+
+    <script>
+// Initialize and add the map
+function initMap() {
+  var The_Metropolitan_Club = {lat: 34.088573, lng: -84.25355400000001};
+  // The location of Uluru
+  var Childrens_Restoration_Network = {lat: 34.055048, lng: -84.33330739999996};
+  var North_Fulton_Community_Charity = {lat: 34.0523719, lng: -84.33506390000002};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 12.5, center: The_Metropolitan_Club});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: Childrens_Restoration_Network, map: map});
+  var marker2 = new google.maps.Marker({position: North_Fulton_Community_Charity, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC26sxj-C9K6WynQZGs6lzpY75xSID-Ono&libraries=places&callback=initMap">
+    </script>
+
+  </head>
+  <body>
+
+      <br>
+      <br>
+    <!--The div element for the map -->
+    <center>
+    <div id="map"></div>
+  </center>
+
+    <body>
+
+      <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+          <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+          <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+          <div class="w3-dropdown-hover">
+              <button class="w3-button w3-black">Page</button>
+              <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+                <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+                <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+              </div>
+            </div>
+            <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+          <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+          </div>
+        </div>
+
+      <center>
+        <p>
+          <br>
+          <br>
+          <br>
+          <font id = "moveDown" size='12' face='Merriweather' color='grey'>
+            Contact Us
+    </p>
+    </center>
+    <center>
+    <div id = "moveDown" class="container">
+      <div class="half">
+        <input type="text" id="fname" name="firstname" class=firstname placeholder="Name">
+        <input type="email" id="email" name="email" class=email placeholder="Email Address">
+        <input type="text" id="subject" name="subject" class=subject placeholder="Subject">
+      </div>
+      <div class="half">
+        <textarea name="message" type="text" id="message" placeholder="Write something..."></textarea>
+      </div>
+    </div>
+    </center>
+    <center><br>
+  <form action="/action_page.php" id = "moveDown" target="_blank">
+      <button type="submit">
+        <a href="mailto:eazyeatsgwc@gmail.com" class="myButton">Submit</a>
+    </form>
+    </center>
+  </body>
+  </html>

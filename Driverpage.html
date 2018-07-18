@@ -1,0 +1,135 @@
+ <!DOCTYPE>
+<html>
+<head>
+  <body style= "background-color:white;">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Driver's Page</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+
+<h1 id = "moveDown">  Driver's Page</h1>
+<center>
+<h2 id = "moveDown"> Welcome Back Driver! </h2>
+<p><h4 id = "moveDown">  Showing Restaraunts Near You for Food Pickup:</h4>
+</center>
+
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+      width: 100%
+    }
+
+    #moveDown {
+      margin-top: 50px;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    /* html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    } */
+  </style>
+
+
+</head>
+<body>
+
+
+    <div class="w3-top">
+      <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-black">Page</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+              <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+              <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+            </div>
+          </div>
+          <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+        <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+        </div>
+      </div>
+
+
+    <script>
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      var map;
+      var infowindow;
+
+      function initMap() {
+        var pyrmont = {lat: 34.088573, lng: -84.25355400000001};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: pyrmont,
+          zoom: 15
+        });
+
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch({
+          location: pyrmont,
+          radius: 2500,
+          type: ['restaurant']
+        }, callback);
+      }
+
+      function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
+        }
+      }
+
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
+    </script>
+
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC26sxj-C9K6WynQZGs6lzpY75xSID-Ono&libraries=places&callback=initMap" async defer></script>
+
+<p><br><br>
+  <h2>Previous Pickups:</h2>
+  <h4><ul>
+    <li>O'Charley's- Chicken Sandwiches</li>
+    <li>Mambo Jambo- Cuban Sandwiches</li>
+    <li>Chiles- Nachos
+  </ul></h4>
+
+
+  </body>
+</html>

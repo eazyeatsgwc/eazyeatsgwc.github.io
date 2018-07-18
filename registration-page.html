@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Registration</title>
+
+<center><h1 id = "move"><strong>Welcome</strong></h1>
+<h3><i>Please click on a form for registration below!</i></h3>
+</center>
+
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<title>Eazy-Eats</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+/* Container holding the image and the text */
+.container  { /*contains images*/
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 100
+}
+
+.container:hover {
+  filter: opacity(0.2) grayscale(100%);
+  color: transparent;
+  z-index: 0;
+}
+
+.container2 { /*contains lists*/
+  margin-top: 50px;
+  position: absolute;
+  z-index: 0;
+  border-style: inset;
+  border-color: black;
+}
+
+.container2:hover {
+    filter: opacity(1) grayscale(0);
+    z-index: 100;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+#move {
+  margin-top:50px;
+}
+
+#firstText {
+  left: 0%;
+  width: 33.33%;
+  height: auto;
+}
+
+#secondText {
+  left: 33.55%;
+  width: 33.33%;
+  height: auto;
+}
+
+#thirdText {
+  left: 66%;
+  width: 33.33%;
+  height: auto;
+}
+/*
+#move2 {
+  margin-top: 100px;
+} */
+
+</style>
+
+</head>
+<body>
+
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+      <div class="w3-dropdown-hover">
+          <button class="w3-button w3-black">Page</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+            <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+            <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+          </div>
+        </div>
+        <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+      </div>
+    </div>
+
+
+
+  <div class="row" id = "center"> <!-- boxes -->
+      <div class="column">
+        <div class="container2" id="firstText">
+          <ul><h3>
+            <li>Login & post leftover food after operating hours.</li>
+            <li>Include quantity and location so a driver nearby can deliver food to a homeless shelter.</li>
+          </ul></h3>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container2" id="secondText">
+          <ul><h3>
+            <li> Drive to restaurants and deliver food to shelter</li>
+            <li>Be employed at a trustworthy driving/taxi service (i.e. Uber, Lyft, etc.) and provide proof of employment</li>
+            <li>Provide middle-man service/ transportation between restaurants and shelters</li>
+          </ul></h3>
+        </div>
+      </div>
+    <div class="column">
+      <div class="container2" id="thirdText">
+        <ul><h3>
+          <li>Choose available food from nearby restaurants </li>
+          <li>Double check that drivers have arrived with requested food</li>
+          <li>Share/post available portions online where homeless people can see it </li>
+          <li>Regularly update number of residents</li>
+        </ul></h3>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row" id = "move2"> <!-- pictures and single words -->
+      <div class="column">
+        <div class="container">
+          <a href = "restaurantloginpage.html"> <img src = "restaurant-picture.png" height = "620px" width = "560px"> </a>
+          <div class="bottom-left"><h1>Restaurant</h1></div>
+
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+            <a href = "Driverspagelogin.html"> <img src = "driver-picture.png" height = "620px" width = "560px"></a>
+          <div class="bottom-left"><h1>Driver</h1></div>
+        </div>
+      </div>
+    <div class="column">
+      <div class="container">
+          <a href = "shelterpagelogin.html"><img src = "shelter-picture.png" height = "620px" width = "560px"></a>
+        <div class="bottom-left"><h1>Shelter</h1></div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<h1><center id="move">
+  Shelter Registration Page
+</h1></center>
+<body style = "background-color: white;">
+  <link rel="stylesheet" type="text/css" href="homepage.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Eazy-Eats</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+#move{
+  margin-top:80px;
+  margin-bottom:20px;
+}
+  </style>
+  <script>
+  function restPage() {
+    window.open('shelterpg.html')
+  }
+  </script>
+  <body>
+
+  <!-- Navbar -->
+
+
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+      <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+      <div class="w3-dropdown-hover">
+          <button class="w3-button w3-black">Page</button>
+          <div class="w3-dropdown-content w3-bar-block w3-border">
+            <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+            <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+            <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+          </div>
+        </div>
+        <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+      <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+      </div>
+    </div>
+<center><img src="foodpoverty.jpg" height="300" width="400"></img></center>
+<html>
+<body>
+<center>
+<form action="/action_page.php">
+Shelter name: <input type="text" name="Shelter" value="Homeaid"><br>
+
+<p>Location: <input type="text" name="Location" value="4411 Summer Street"> <br></p>
+
+<p>City, State, Zip: <input type="text" name="LocationCSZ" value= "Atlanta, GA 30062"><br></p>
+
+<p>Phone Number: <input type="int" name="Number" value="678-942-8733"></p>
+
+<p>Meal Times: <input type="text" name="Meal Times" value="9am, 12pm, 8pm"><br></p>
+
+<p>Email: <input type="text" name="Email" value="homeaid@gmail.com"><br></p>
+
+<p>Number of Residents (update regularly): <input type="text" name="Residents" value="100"><br></p>
+
+<p>Username: <input type="text" name="User" value="HomeaidShelter"><br></p>
+
+<p>Password: <input type"text" name="Pass" value="ServingOthers001"><br></p>
+
+</form>
+<button type="button" name="button" onclick = "restPage()">Submit</button>
+</center>
+</body>
+</html>

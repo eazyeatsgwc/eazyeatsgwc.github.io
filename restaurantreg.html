@@ -1,0 +1,81 @@
+<h1><center id= "moveThat">
+  Restaurant Registration Page
+</h1></center>
+<title> Restaurant Registration Page </title>
+<body style = "background-color: white;">
+<link rel="stylesheet" type="text/css" href="homepage.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+#moveThat{
+  margin-top:50px;
+  margin-bottom:20px;
+}
+</style>
+<script>
+function restPage() {
+  window.open('restaurant_page.html')
+}
+</script>
+<body>
+
+<!-- Navbar -->
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-black">Page</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="driverpage.html" class="w3-bar-item w3-button">Driver</a>
+          <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+        </div>
+      </div>
+      <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+
+    </div>
+  </div>
+<center><img src="restaurant.jpg" height="300" width="400" id="moveThat"></img></center>
+<html>
+<body>
+<center>
+<form action="/action_page.php">
+Restaurant name: <input type="text" name="Restaurant" value="Mumbo Jumbo"><br></p>
+
+<p>Location: <input type="text" name="Location" value="5314 Albany Way"><br></p>
+
+<p>City, State, Zip: <input type="text" name="LocationCSZ" value= "Atlanta, GA 30014"><br></p>
+
+<p>Phone Number: <input type="int" name="Number" value= "404-833-0964"><br></p>
+
+<p>Hours (weekdays): <input type="text" name="Hoursweek" value="9am-10pm"><br></p>
+
+<p>Hours (weekends): <input type="text" name="Hoursend" value="10am-11pm"><br></p>
+
+<p>Email: <input type="text" name="Email" value="mumbjumb@gmail.com"><br></p>
+
+<p>Username: <input type="text" name="User" value="MumboJumboFood"><br></p>
+
+<p>Password: <input type"text" name="Pass" value="LoveFoodLoveOthers"><br></p>
+
+</form>
+<button type="button" name="button" onclick = "restPage()">Submit</button>
+</center>
+</body>
+</html>
