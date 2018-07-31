@@ -39,27 +39,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </head>
   <body>
 
-    <div class="w3-top">
-      <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-        <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="registration-page.html" class="w3-bar-item w3-button">Registration</a>
 
-        <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
-        <div class="w3-dropdown-hover">
-            <button class="w3-button w3-white">Page</button>
-            <div class="w3-dropdown-content w3-bar-block w3-border">
-              <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
-              <a href="Driverpage.html" class="w3-bar-item w3-button">Driver</a>
-              <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
-
-            </div>
-          </div>
-          <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
-        <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Registration</a> -->
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-white w3-padding-large">Page</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="Driverpage.html" class="w3-bar-item w3-button">Driver</a>
+          <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
 
         </div>
       </div>
+      <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="helppage.html" class="w3-bar-item w3-button">Help</a>   
+    <!--  This is where I am working on the translation feature!!   -->
+    <div id="google_translate_element" class="w3-bar-item"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- End of translation feature -->
+    </div>
+  </div>
 
 <div id = "colorDiv">
 <a href = "restaurant_popup_actual.html"> <p><h3 id = "newFood">Contribute New Food Item</h3> </a>
