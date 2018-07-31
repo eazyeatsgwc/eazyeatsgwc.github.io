@@ -122,6 +122,16 @@ q {font-style: italic;}
       </div>
       <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
     <a href="helppage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Help</a>
+    
+<!--  This is where I am working on the translation feature!!   -->
+    <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+
+    
+<!-- End of translation feature -->
 
     </div>
   </div>
@@ -247,12 +257,6 @@ function showSlides(n) {
 
 <!--   WORKING HERE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,es,hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">
   <!-- <div >
@@ -272,27 +276,6 @@ function googleTranslateElementInit() {
 
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
 </body>
-
-
-
-
-
-
-
-
-
 
 </html>
