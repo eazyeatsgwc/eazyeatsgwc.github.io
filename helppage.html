@@ -108,21 +108,35 @@
        .left {
             margin-right: 2%;
        } */
-    </style>
+    <!--  This is where I am working on the translation feature!!   -->
+    <div id="google_translate_element" class="w3-bar-item"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- End of translation feature -->
+    </div>
+  </div>
 
     <script>
 // Initialize and add the map
 function initMap() {
-  var The_Metropolitan_Club = {lat: 34.088573, lng: -84.25355400000001};
-  // The location of Uluru
-  var Childrens_Restoration_Network = {lat: 34.055048, lng: -84.33330739999996};
-  var North_Fulton_Community_Charity = {lat: 34.0523719, lng: -84.33506390000002};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 12.5, center: The_Metropolitan_Club});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: Childrens_Restoration_Network, map: map});
-  var marker2 = new google.maps.Marker({position: North_Fulton_Community_Charity, map: map});
+    var ATandT_Midtown = {lat: 33.7766871 , lng: -84.3890054};
+    var Atlanta_Childrens_Shelter = {lat: 33.7713969, lng: -84.3872346};
+    // The location of Uluru
+    var The_Salvation_Army = {lat: 33.76564, lng: -84.39678};
+    var Atlanta_Mission_The_Shepards_Inn = {lat: 33.7650099, lng: -84.39257};
+    var Atlanta_Mission_Fuque_Hall = {lat: 33.7651691 , lng: -84.3925744};
+    var Atlanta_Mission_My_Sisters_House = {lat: 33.78013, lng:-84.41};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13.5, center: ATandT_Midtown});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: Atlanta_Childrens_Shelter, map: map});
+    var marker2 = new google.maps.Marker({position: The_Salvation_Army, map: map});
+    var marker3 = new google.maps.Marker({position: Atlanta_Mission_The_Shepards_Inn, map: map});
+    var marker4 = new google.maps.Marker({position: Atlanta_Mission_Fuque_Hall, map: map});
+    var marker5 = new google.maps.Marker({position: Atlanta_Mission_My_Sisters_House, map: map});
 }
     </script>
     <script async defer
@@ -157,7 +171,7 @@ function initMap() {
         </div>
       </div> -->
       <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
-    <a href="helppage.html" class="w3-bar-item w3-button w3-white w3-padding-large">Help</a>   
+    <a href="helppage.html" class="w3-bar-item w3-button w3-white w3-padding-large">Help</a>
     <!--  This is where I am working on the translation feature!!   -->
     <div id="google_translate_element" class="w3-bar-item"></div><script type="text/javascript">
     function googleTranslateElementInit() {
@@ -197,3 +211,6 @@ function initMap() {
     </center>
   </body>
   </html>
+  
+
+      
