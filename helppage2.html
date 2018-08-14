@@ -1,0 +1,119 @@
+<!DOCTYPE>
+<html><!DOCTYPE html>
+  <head>
+    <h1 id = "moveDownPlease">Nearby Shelters</h1>
+    <center>
+    <h3 id = "moveDownPlease"> Sorry, no shelters nearby are registered at the moment. Contact your
+      closest shelter and tell them to join Eazy-Eats and make food accessible to all.</h3>
+  <meta http-equiv="Refresh" content="5;url=https://eazyeatsgwc.github.io/helppage.html">
+    </center>
+
+      <link rel="stylesheet" type="text/css" href="homepage.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <meta charset="UTF-8">
+      <title> Help Page </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- <div id="map" style="width:400px;height:400px"> -->
+    <style>
+
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+      /* Set the size of the div element that contains the map */
+      #moveDownPlease {
+        margin-top: 50px;
+      }
+
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 75%;  /* The width is the width of the web page */
+        margin-top: 25px;
+       }
+
+       #moveDown {
+         margin-top: 100px;
+       }
+
+       /* .right { width: 50%; }
+
+       .left {
+            margin-right: 2%;
+       } */
+    </style>
+
+    <script>
+// Initialize and add the map
+function initMap() {
+    var ATandT_Midtown = {lat: 33.7766871 , lng: -84.3890054};
+    var Atlanta_Childrens_Shelter = {lat: 33.7713969, lng: -84.3872346};
+    // The location of Uluru
+    var The_Salvation_Army = {lat: 33.76564, lng: -84.39678};
+    var Atlanta_Mission_The_Shepards_Inn = {lat: 33.7650099, lng: -84.39257};
+    var Atlanta_Mission_Fuque_Hall = {lat: 33.7651691 , lng: -84.3925744};
+    var Atlanta_Mission_My_Sisters_House = {lat: 33.78013, lng:-84.41};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13.5, center: ATandT_Midtown});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: Atlanta_Childrens_Shelter, map: map});
+    var marker2 = new google.maps.Marker({position: The_Salvation_Army, map: map});
+    var marker3 = new google.maps.Marker({position: Atlanta_Mission_The_Shepards_Inn, map: map});
+    var marker4 = new google.maps.Marker({position: Atlanta_Mission_Fuque_Hall, map: map});
+    var marker5 = new google.maps.Marker({position: Atlanta_Mission_My_Sisters_House, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC26sxj-C9K6WynQZGs6lzpY75xSID-Ono&libraries=places&callback=initMap">
+    </script>
+
+  </head>
+  <body>
+
+      <br>
+      <br>
+    <!--The div element for the map -->
+    <center>
+    <div id="map"></div>
+  </center>
+
+    <body>
+      <center>
+        <p>
+          <h4 id = "moveDownPlease"> Your message has been sent.  If this page does not redirect within five seconds, please click the following
+          link: <a href="https://eazyeatsgwc.github.io/helppage.html">https://eazyeatsgwc.github.io/helppage.html</a></p>
+
+     <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="registration-page.html" class="w3-bar-item w3-button">Login</a>
+<!--     <div class="w3-dropdown-hover">
+        <button class="w3-button">Page</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="Driverpage.html" class="w3-bar-item w3-button">Driver</a>
+          <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+
+        </div>
+      </div> -->
+      <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="helppage.html" class="w3-bar-item w3-button w3-white w3-padding-large">Help</a>
+    <!--  This is where I am working on the translation feature!!   -->
+    <div id="google_translate_element" class="w3-bar-item"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- End of translation feature -->
+    </div>
+  </div>
+
+
+  </html>
