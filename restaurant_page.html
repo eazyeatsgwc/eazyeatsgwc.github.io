@@ -91,6 +91,98 @@ document.getElementById("answers").innerHTML = 5 + 6;
 
 
   </body>
+<!--   Quotes Filter    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container w3-container w3-black w3-center w3-opacity w3-padding-64">
+
+  <!-- Full-width slides/quotes -->
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+    <p class="author">- John Keats</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+    <p class="author">- Ernest Hemingway</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>The best way to not feel hopeless is to get up and do something. Don’t wait for good things to happen to you. If you go out and make some good things happen, you will fill the world with hope, you will fill yourself with hope.</q>
+    <p class="author">- Barack Obama</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>We can't help everyone, but everyone can help someone</q>
+    <p class="author">- Ronald Reagan</p>
+  </div>
+
+  <div class="mySlides w3-margin w3-xlarge">
+    <q>The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.</q>
+    <p class="author">- Ralph Waldo Emerson</p>
+  </div>
+
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<!--   WORKING HERE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <!-- <div >
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div> -->
+ <div class="w3-large w3-padding-2">
+   <p>Girls Who Code
+   <br>Synchrony Financial Alpharetta</p>
+ </div>
+
+
+
+</footer>
 
 
 </html>
