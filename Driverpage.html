@@ -1,131 +1,261 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
+  <body style= "background-color:white;">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Driver's Page</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 2000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
+
+<h1 id = "moveDown">  Driver's Page</h1>
+<center>
+<h2 id = "moveDown"> Welcome Back Driver! </h2>
+<p><h4 id = "moveDown">  Showing Restaraunts Near You for Food Pickup:</h4>
+</center>
+
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+  .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    /* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+    #map {
+      height: 100%;
+      width: 95%
+    }
+    #moveDown {
+      margin-top: 50px;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    /* html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    } */
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 2000px;
+      position: relative;
+      margin: auto;
+    }
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+  </style>
+
+
 </head>
 <body>
 
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <center>
-  <img src="beautifulpic3.jpg" style="width:1700px;height:500px;">
-</div>
+   <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="registration-page.html" class="w3-bar-item w3-button w3-white w3-padding-large">Login</a>
+<!--     <div class="w3-dropdown-hover">
+        <button class="w3-button">Page</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="restaurant_page.html" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="Driverpage.html" class="w3-bar-item w3-button">Driver</a>
+          <a href="shelterpg.html" class="w3-bar-item w3-button">Shelter</a>
+        </div>
+      </div> -->
+      <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+    <a href="helppage.html" class="w3-bar-item w3-button">Help</a>
+    <!--  This is where I am working on the translation feature!!   -->
+    <div id="google_translate_element" class="w3-bar-item"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- End of translation feature -->
+    </div>
+  </div>
 
-<div class="mySlides fade">
-  <center>
-  <img src="littledeeds.jpg" style="width:1700px;height:500px;">
-</div>
 
-<div class="mySlides fade">
-   <center>
-  <img src="beautifulpic5.jpg" style="width:1700px;height:500px;">
-</div>
+    <script>
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+      if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(initMap);
+      } else {
+          error('Sorry , Geolocation is not supported in your device');
+      }
+      var map;
+      var infowindow;
+      function initMap(position){
+var
+  center      = { lat: position.coords.latitude,
+                  lng: position.coords.longitude};
+  map         = new google.maps.Map(document.getElementById('map'),{
+                  center: center,
+                  zoom:15.5
+                }),
+  callback    = function(results, status){
+                  if (status === google.maps.places.PlacesServiceStatus.OK){
+                    for (var i =0; i < results.length; i++){
+                      createMarker(results[i]);
+                    }
+                  }
+                }
+  createMarker= function(place){
+                  var placeLoc = place.geometry.location,
+                      marker = new google.maps.Marker({
+                                    map: map,
+                                    position: place.geometry.location
+                               });
+                  google.maps.event.addListener(marker, 'click' , function (){
+                    infowindow.setContent(place.name);
+                    infowindow.open(map , this);
+                  });
+                },
+  infowindow  = new google.maps.InfoWindow(),
+  service     = new google.maps.places.PlacesService(map);
+  service.nearbySearch({
+      location: center,
+      radius:3500,
+      type: ['restaurant']
+  }, callback);
+}
+if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(function(position){initMap(position);});
+}else{
+  alert('Sorry , Geolocation is not supported in this environment');
+}
+    </script>
 
-<div class="mySlides fade">
-  <center>
-  <img src="quote1option2.png" style="width:1700px;height:500px;">
-</div>
-  
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+ <center> <div id="map"></div> </center>
 
-</div>
-<br>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC26sxj-C9K6WynQZGs6lzpY75xSID-Ono&libraries=places&callback=initMap" async defer></script>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-</div>
+<p><br>
+  <h2>&nbsp;&nbsp;&nbsp;&nbsp;Previous Pickups:</h2>
+  <h4><ul>
+    <li>O'Charley's- Chicken Sandwiches</li>
+    <li>Mambo Jambo- Cuban Sandwiches</li>
+    <li>Chiles- Nachos
+  </ul></h4>
 
+
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <center>
+    <img src="beautifulpic3.jpg" style="width:1700px;height:500px;">
+  </div>
+
+  <div class="mySlides fade">
+    <center>
+    <img src="littledeeds.jpg" style="width:1700px;height:500px;">
+  </div>
+
+  <div class="mySlides fade">
+     <center>
+    <img src="beautifulpic5.jpg" style="width:1700px;height:500px;">
+  </div>
+
+  <div class="mySlides fade">
+    <center>
+    <img src="quote1option2.png" style="width:1700px;height:500px;">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -139,18 +269,17 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
-
-</body>
-</html> 
+  </body>
+</html>
